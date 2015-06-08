@@ -1,0 +1,20 @@
+<?php echo $__env->make('layouts.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<?php $__env->startSection('content'); ?>
+
+	<div class="container" id="project">
+		<h1>Create a new project</h1>
+		<form method="POST">
+			<div class="form-group">
+				<input type="text" class="form-control" name="project" placeholder="Enter a project name" v-model="newProject" />
+			</div>
+			<div class="form-group">
+				<button name="submit" class="btn btn-success">Submit</button>
+			</div>
+		</form>
+	</div>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
